@@ -1,0 +1,237 @@
+/*FONDO Y DESLIZAMIENTO*/
+html{
+    scroll-behavior: smooth;
+    background-color: #1a1a1a;
+}
+
+/* Resetear los márgenes y el espaciado del cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-header {
+  font-family: Arial Black;
+  background: black;
+  color: white;
+  height: 80px;  
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+} 
+
+#main-header a {
+  color: white;
+}
+
+/*NAVEGACIÓN*/
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 20px;
+}
+  
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+      
+nav ul li a {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #de2d40;
+  }
+
+/*IMGS DE FONDO*/
+#portada{
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px; /* Ajusta el espaciado según sea necesario */
+    font-family: Impact;
+    font-size: 50px;
+}
+
+#ComoReconocerlos{
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 10px; /* Ajusta el espaciado según sea necesario */
+    text-align: right;
+    padding-right: 50%;
+}
+
+#QueSon{
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px; /* Ajusta el espaciado según sea necesario */
+  text-align: left;
+  padding-left: 50%;
+}
+
+#Prevenirlos{
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px; /* Ajusta el espaciado según sea necesario */
+  text-align: left;
+  padding-left: 50%;
+}
+
+/* CONTENIDO */
+.main-content {
+    padding: 25px;
+}
+
+h2{
+    font-family: impact;
+    color: #de2d40;
+    text-align: center;
+}
+
+p, li{
+    font-family: arial black;
+    color: black;
+    text-align: justify-all;
+    font-size: 15px;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*ENLACES*/
+a{
+  color: white;
+}
+
+a:hover{
+  color: #de2d40;
+}
+
+img{
+    display: flex;
+  }
+
+/*SI LA PANTALLA ES IGUAL O MENOR A 850PX --> VALOR MÁXIMO*/
+@media(max-width: 850px){
+/*IMGS DE FONDO*/
+#portada{
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px; /* Ajusta el espaciado según sea necesario */
+    font-family: Impact;
+    font-size: 20px;
+}
+
+#ComoReconocerlos{
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 10px; /* Ajusta el espaciado según sea necesario */
+    text-align: right;
+    padding-right: 40%;
+}
+
+#QueSon{
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px; /* Ajusta el espaciado según sea necesario */
+  text-align: left;
+  padding-left: 40%;
+}
+
+#Prevenirlos{
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px; /* Ajusta el espaciado según sea necesario */
+  text-align: left;
+  padding-left: 40%;
+}
+
+/* CONTENIDO */
+.main-content {
+    padding: 25px;
+}
+
+h2{
+    font-family: impact;
+    color: #de2d40;
+    text-align: center;
+}
+
+p, li{
+    font-family: arial black;
+    color: black;
+    text-align: justify;
+    font-size: 14px;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+} 
+    }
+
+      /*SI LA PANTALLA ES IGUAL O MENOR A 300PX --> VALOR MÁXIMO*/
+      @media(max-width: 500px){
+        /* CONTENIDO */
+        .main-content {
+            padding: 20px;
+        }
+
+        h2{
+            font-family: impact;
+            color: #de2d40;
+            text-align: center;
+        }
+
+        p, li{
+            font-family: arial black;
+            color: black;
+            text-align: justify-all;
+            font-size: 13px;
+            color: white;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+        }
+      }
